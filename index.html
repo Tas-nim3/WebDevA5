@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Board</title>
+
+    <!-- DaisyUI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        /* font style */
+
+        .poppins{
+         font-family: "Poppins", sans-serif;
+         }
+
+    </style>
+    </head>
+
+<body class="bg-blue-50 ">
+    <section  class="max-w-screen-xl  min-h-screen mx-auto py-6 ">
+        <header>
+            <nav class="">
+                <div class="navbar rounded-2xl bg-base-100">
+                    <div class="flex flex-1">
+                        <img  class="w-8 h-8 mt-1 ml-1"  src="./assets/logo.png">
+                      <a class="mt-1 ml-1 text-xl poppins">Dev<span class="font-bold">Board</span></a>
+                    </div>
+                     <button class="btn bg-blue-50  rounded-2xl mr-3 border-none">
+                        <img class="w-4" src="./assets/checkbox.png">
+                         <spam id="plus-number" class="poppins font-bold"> 23</spam>
+                     </button>
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                          <div class="bg-blue-50 w-10 rounded-full">
+                            <img id="color-btn" class="p-2"
+                              alt="Tailwind CSS Navbar component"
+                              src="./assets/theme-btn.png" />
+                          </div>
+                        
+                    </div>
+                  </div>
+            </nav>
+        </header>
+        <main>
+            <div class="grid grid-cols-4  gap-5">
+                
+        <!-- Big box -->
+            <section class="mt-5 col-span-3">
+                <div class="bg-white p-5 rounded-2xl ">
+            <!-- nav -->
+        <div class="grid grid-cols-4 gap-3">
+            <!--  1 box of nav -->
+                <div class="bg-blue-50 p-5 flex  rounded-xl">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="bg-white rounded-full m-[-10px] mt-2 p-1">
+                              <img class="p-3"
+                                alt="Tailwind CSS Navbar component"
+                                src="./assets/checkbox.png" />
+                            </div>
+                            </div>
+                        <div>
+                        <p class="text-[16px] ml-3">Task Assigned</p>
+                        <h2  id="minus-number" class="ml-3 text-2xl poppins font-bold">05</h2>
+                        </div>
+                </div>
+            <!--  2 box of nav -->
+                <div id="Box-2" class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]  p-5 flex rounded-xl col-span-2">
+                        <img src="./assets/board.png">
+                        <p class="text-2xl poppins text-white ml-2 mt-1">
+                            Discover Something <br> New Today!
+                        </p>
+                </div>
+            <!--  3 box of nav -->
+                <div class="bg-blue-50 p-5 flex  rounded-xl">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="bg-white rounded-full m-[-10px] mt-2 p-1">
+                              <img class="p-3"
+                                alt="Tailwind CSS Navbar component"
+                                src="./assets/calender.png" />
+                            </div>
+                            </div>
+                        <div>
+                        <p class="text-[16px] ml-3">Task Assigned</p>
+                        <h2 class="ml-3 text-2xl poppins font-bold">05</h2>
+                        </div>
+                </div> 
+                
+        </div>
+        <div class="border-b-2 border-dashed border-slate-100 mt-5">
+        </div>
+                  <!-- cards -->
+                  <div class="mt-5 grid grid-cols-3 grid-rows-2 gap-4">
+    
+                <!-- card1 -->
+                   <div class="bg-blue-50 p-5 rounded-xl">
+                     <button class="btn border-none bg-white rounded-xl text-[16px] poppins font-normal">
+                        ShopEase
+                     </button>
+                     <h2 class="text-2xl poppins my-2">
+                        Fix Mobile Button
+                     </h2>
+                     <div class="bg-white p-3 rounded-xl">
+                        <p class="poppins text-[16px] text-slate-400 ">
+                            Ensure the button works smoothly on mobile.
+                        </p>
+                     </div>
+                     <div class="border-b-2 border-dashed border-slate-200 mt-5">
+                    </div>
+                     <div class="my-3 flex justify-between">
+                        <div>
+                            <P class="text-[14px] text-slate-400 poppins">Deadline</P>
+                            <h2 class="text-[16px] poppins">
+                                21 March 2025
+                            </h2>
+                         </div>
+                         <button id="Completed-btn" class="btn mt-2 bg-blue-500 p-3 border-none text-[16px] text-white font-normal" >
+                            Completed
+                         </button>
+                     </div>
+                   </div>
+    
+                <!-- card2 -->
+                   <div class="bg-blue-50 p-5 rounded-xl">
+                     <button class="btn border-none bg-white rounded-xl text-[16px] poppins font-normal">
+                        CloudSync
+                     </button>
+                     <h2 class="text-2xl poppins my-2">
+                        Add Dark Mode 
+                     </h2>
+                     <div class="bg-white p-3 rounded-xl">
+                        <p class="poppins text-[16px] text-slate-400 ">
+                            Enable dark mode for a better nighttime experience.
+                        </p>
+                     </div>
+                     <div class="border-b-2 border-dashed border-slate-200 mt-5">
+                    </div>
+                     <div class="my-3 flex justify-between">
+                        <div>
+                            <P class="text-[14px] text-slate-400 poppins">Deadline</P>
+                            <h2 class="text-[16px] poppins">
+                                21 March 2025
+                            </h2>
+                         </div>
+                         <button id="Completed-btn" class="btn mt-2 bg-blue-500 p-3 border-none text-[16px] text-white font-normal" >
+                            Completed
+                         </button>
+                     </div>
+                   </div>
+    
+                <!-- card3 -->
+                 <div class="bg-blue-50 p-5 rounded-xl">
+                    <button class="btn border-none bg-white rounded-xl text-[16px] poppins font-normal">
+                        SwiftPay
+                    </button>
+                    <h2 class="text-2xl poppins my-2">
+                        Optimize  Home page
+                    </h2>
+                    <div class="bg-white p-3 rounded-xl">
+                       <p class="poppins text-[16px] text-slate-400 ">
+                        Improve performance for a smoother user experience.
+                       </p>
+                    </div>
+                    <div class="border-b-2 border-dashed border-slate-200 mt-5">
+                    </div>
+                    <div class="my-3 flex justify-between">
+                       <div>
+                           <P class="text-[14px] text-slate-400 poppins">Deadline</P>
+                           <h2 class="text-[16px] poppins">
+                               21 March 2025
+                           </h2>
+                        </div>
+                        <button id="Completed-btn" class="btn mt-2 bg-blue-500 p-3 border-none text-[16px] text-white font-normal" >
+                           Completed
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- card4 -->
+                <div class="bg-blue-50 p-5 rounded-xl">
+                    <button class="btn border-none bg-white rounded-xl text-[16px] poppins font-normal">
+                        Meta
+                    </button>
+                    <h2 class="text-2xl poppins my-2">
+                        Add new emoji 🤲
+                    </h2>
+                    <div class="bg-white p-3 rounded-xl">
+                       <p class="poppins text-[16px] text-slate-400 ">
+                        Welcoming new opportunities
+                       </p>
+                    </div>
+                    <div class="border-b-2 border-dashed border-slate-200 mt-5">
+                    </div>
+                    <div class="my-3 flex justify-between">
+                       <div>
+                           <P class="text-[14px] text-slate-400 poppins">Deadline</P>
+                           <h2 class="text-[16px] poppins">
+                               21 March 2025
+                           </h2>
+                        </div>
+                        <button id="Completed-btn" class="btn mt-2 bg-blue-500 p-3 border-none text-[16px] text-white font-normal" >
+                           Completed
+                        </button>
+                    </div>
+                  </div>
+    
+               <!-- card5 -->
+                  <div class="bg-blue-50 p-5 rounded-xl">
+                    <button class="btn border-none bg-white rounded-xl text-[16px] poppins font-normal">
+                        Google LLC
+                    </button>
+                    <h2 class="text-2xl poppins my-2">
+                        Integrate OpenAI API  
+                    </h2>
+                    <div class="bg-white p-3 rounded-xl">
+                       <p class="poppins text-[16px] text-slate-400 ">
+                        Interact with OpenAI API for intelligent responses 
+                       </p>
+                    </div>
+                    <div class="border-b-2 border-dashed border-slate-200 mt-5">
+                    </div>
+                    <div class="my-3 flex justify-between">
+                       <div>
+                           <P class="text-[14px] text-slate-400 poppins">Deadline</P>
+                           <h2 class="text-[16px] poppins">
+                               21 March 2025
+                           </h2>
+                        </div>
+                        <button id="Completed-btn" class="btn mt-2 bg-blue-500 p-3 border-none text-[16px] text-white font-normal" >
+                           Completed
+                        </button>
+                    </div>
+                  </div>
+    
+               <!-- card6 -->
+                <div class="bg-blue-50 p-5 rounded-xl">
+                   <button class="btn border-none bg-white rounded-xl text-[16px] poppins font-normal">
+                    Glass door
+                   </button>
+                   <h2 class="text-2xl poppins my-2">
+                    Job searching 
+                   </h2>
+                   <div class="bg-white p-3 rounded-xl">
+                      <p class="poppins text-[16px] text-slate-400 ">
+                        Enhance your job search with tailored opportunities.
+                      </p>
+                   </div>
+                   <div class="border-b-2 border-dashed border-slate-200 mt-5">
+                </div>
+                   <div class="my-3 flex justify-between">
+                      <div>
+                          <P class="text-[14px] text-slate-400 poppins">Deadline</P>
+                          <h2 class="text-[16px] poppins">
+                              21 March 2025
+                          </h2>
+                       </div>
+                       <button id="Completed-btn" class="btn mt-2 bg-blue-500 p-3 border-none text-[16px] text-white font-normal" >
+                          Completed
+                       </button>
+                   </div>
+               </div>
+            
+    
+            </div>
+        </div>
+                </section>
+                <!--long box -->
+                 <section class="bg-white p-3 mt-5 rounded-xl">
+                    <div class=" ml-16 mt-5">
+                    <div class="flex gap-2">
+                        <img class="w-5 h-5 mt-1" src="./assets/activity.png">
+                        <h2 class="text-xl">
+                            Activity Log
+                        </h2>
+                    </div>
+                        <button class="btn mt-2 ml-3 bg-blue-500 p-3 border-none text-[16px] text-white font-normal" >
+                            Clear History
+                         </button>
+                    </div>
+                    <div class="border-b-2 border-dashed border-slate-200 mt-5">
+                    </div>
+<!-- for msj -->
+                    <div class="comment">
+
+                    </div>
+                
+                 </section>
+    
+            
+            </div>
+        </main>
+    </section>
+
+    <script src="./script/btncolorTheme.js"></script>
+    
+</body>
+</html>
