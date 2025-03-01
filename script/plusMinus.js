@@ -1,7 +1,10 @@
-document.querySelectorAll(".Completed-btn").forEach(element => {
-    element.addEventListener("click",() => {
-        alert("Board updated Successfully");
-        
+function IntNumber(id){
+    const value = document.getElementById(id).innerText;
+    const convertV = parseInt(value);
+    return convertV;
+}
 
-    })
-})
+function setInnerText(id, value){
+    document.getElementById(id).innerText = value ;
+}
+
