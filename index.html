@@ -87,7 +87,7 @@
                             </div>
                             </div>
                         <div>
-                        <h2 id="date-btn" class="ml-3 text-xl poppins font-normal font-bold"></h2>
+                        <h2 id="date-btn" class="ml-3 text-xl poppins font-normal "></h2>
                         </div>
                 </div> 
                 
@@ -95,14 +95,14 @@
         <div class="border-b-2 border-dashed border-slate-100 mt-5">
         </div>
                   <!-- cards -->
-                  <div class="mt-5 grid grid-cols-3 grid-rows-2 gap-4">
+                  <div id = "task-cards" class="mt-5 grid grid-cols-3 grid-rows-2 gap-4">
     
                 <!-- card1 -->
                    <div class="bg-blue-50 p-5 rounded-xl">
                      <button class="btn border-none bg-white rounded-xl text-[16px] poppins font-normal">
                         ShopEase
                      </button>
-                     <h2 class="text-2xl poppins my-2">
+                     <h2 class="text-2xl  poppins my-2">
                         Fix Mobile Button
                      </h2>
                      <div class="bg-white p-3 rounded-xl">
@@ -119,7 +119,7 @@
                                 21 March 2025
                             </h2>
                          </div>
-                         <button class="btn Completed-btn mt-2 bg-blue-500 p-3 border-none text-[16px] text-white font-normal" >
+                         <button class="btn Completed-btn mt-2 bg-blue-500 p-3 border-none text-[16px] text-white font-normal"onclick="updateTime('Add Dark Mode')" >
                             Completed
                          </button>
                      </div>
@@ -274,7 +274,7 @@
                     <div class=" ml-16 mt-5">
                     <div class="flex gap-2">
                         <img class="w-5 h-5 mt-1" src="./assets/activity.png">
-                        <h2 class="text-xl">
+                        <h2 id="btnDeleteComments" class="text-xl ">
                             Activity Log
                         </h2>
                     </div>
@@ -285,11 +285,9 @@
                     <div class="border-b-2 border-dashed border-slate-200 mt-5">
                     </div>
 <!-- for msj -->
-                    <div>
-                        <P  id="time-btn" class="comment">
-                            
-                        </P>
-
+                    <div id="comments-section" class=" rounded-xl gap-3 ">
+                    </div>     
+                       
                     </div>
                 
                  </section>
